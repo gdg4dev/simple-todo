@@ -4,5 +4,5 @@
 ```npm install```
 
 ### prerequisite
-1. Node + Npm 1
-1. MongoDB 2
+1. Node + Npm
+1. MongoDB
