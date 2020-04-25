@@ -8,7 +8,6 @@ router
     .get(rootHelper.listAll)
     .post(rootHelper.create)
 
-
 router
     .route('/:todoId')
     .get(paramsHelper.search)
