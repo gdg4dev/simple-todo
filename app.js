@@ -1,8 +1,10 @@
+require('dotenv').config();
 const express = require('express'),
     app = express(),
-    PORT = process.env.PORT || 3000,
+    PORT = process.env.PORT || 2500,
     todoRoutes = require('./routes/todos'),
     bodyParser = require('body-parser')
+
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
