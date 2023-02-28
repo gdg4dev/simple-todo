@@ -1,10 +1,13 @@
 {
     "version": 2,
-    "name": "todo server",
-    "builds": [
-       { "src": "app.js", "use": "@vercel/node" }
-    ],
-    "routes": [
-       { "src": "/(.*)", "dest": "/app.js" }
+    "builds": [{
+      "src": "./app.js",
+      "use": "@now/node-server"
+    }],
+    "routes": [{"handle": "filesystem"},
+      {
+        "src": "/.*",
+        "dest": "app.js"
+      }
     ]
- }
+  }
