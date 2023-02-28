@@ -20,3 +20,4 @@ app.use('/apis/todos', todoRoutes)
 app.listen(PORT, () => {
     console.log('server started at: http://127.0.0.1:' + PORT)
 })
+module.exports = app;
